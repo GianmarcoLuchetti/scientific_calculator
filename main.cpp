@@ -19,7 +19,7 @@ void log_10();
 
 int main(){
 
-    // GUI
+    // MAIN INTERFACE
     cout<<"**************************************CALCULATOR*************************************\n";
     cout<<"_____________________________________________________________________________________\n";
     cout<<"Operation\t"<<"\t Trigonometric function \t"<<"\t Logaritmic function\n";
@@ -100,34 +100,39 @@ int main(){
 }
 
 void division(){
+    // 4 - 3 = 1
     cout<<"Enter the numbers you want to divide: ";
-    int a,b;
+    float a,b;
     cin>>a>>b;
     cout<<"The division of "<<a<<" and "<<b<<" is "<<a/b<<endl;
 }
 
 void multiplication(){
+    // 3 * 3 = 9
     cout<<"Enter the numbers you want to multipliation: ";
-    int a,b;
+    float a,b;
     cin>>a>>b;
     cout<<"The multiplication of "<<a<<" and "<<b<<" is "<<a*b<<endl;
 }
 
 void subtraction(){
+    // 4 / 2 = 2
     cout<<"Enter the numbers you want to subtract: ";
-    int a,b;
+    float a,b;
     cin>>a>>b;
     cout<<"The subtraction of "<<a<<" and "<<b<<" is "<<a-b<<endl;
 }
 
 void addition(){
+    // 2 + 5 = 7
     cout<<"Enter the numbers you want to add: ";
-    int a,b;
+    float a,b;
     cin>>a>>b;
     cout<<"The addition of "<<a<<" and "<<b<<" is "<<a+b<<endl;
 }
 
 void exponent(){
+    // 2^2 = 4
     cout<<"Enter the base and exponent: ";
     double b,e;
     cin>>b>>e;
@@ -136,65 +141,75 @@ void exponent(){
 }
 
 void square_root(){
+    // sqrt(4) = 2
     cout<<"Enter the number you want the sqaure of: ";
-    int a;
+    float a;
     cin>>a;
     cout<<"The square root of "<<a<<" is "<<sqrt(a)<<endl;
 }
 
 void sin(){
+    // sin(180) = -0.8
     cout<<"Enter the angle in radians: ";
-    int a;
+    float a;
     cin>>a;
     cout<<"The sin of "<<a<<" is "<<sin(a)<<endl;
 }
 
 void cos(){
+    // cos(180) = -0.6
     cout<<"Enter the angle in radians: ";
-    int a;
+    float a;
     cin>>a;
     cout<<"The cos of "<<a<<" is "<<cos(a)<<endl;
 }
 
 void tan(){
+    // tan(180) = 15
     float PI = 3.14159265;
     cout<<"Enter the angle in radians: ";
-    int a;
+    float a;
     cin>>a;
     cout<<"The tan of "<<a<<" is "<<tan(a)<<endl;
 }
 
 void anti_sin(){
+    // asin(180) = -0.8
+    float PI=3.14159265;
     cout<<"Enter the angle in radians: ";
-    int a;
+    float a;
     cin>>a;
-    cout<<"The anti sin of "<<a<<" is "<<asin(a)<<endl;
+    cout<<"The anti sin of "<<a<<" is "<<asin(a)* 180.0 / PI<<endl;
 }
 
 void anti_cos(){
+    float PI=3.14159265;
     cout<<"Enter the angle in radians: ";
-    int a;
+    float a;
     cin>>a;
-    cout<<"The anti cos of "<<a<<" is "<<acos(a)<<endl;
+    cout<<"The anti cos of "<<a<<" is "<<acos(a)* 180.0 / PI<<endl;
 }
 
 void anti_tan(){
+    float PI=3.14159265;
     cout<<"Enter the angle in radians: ";
     int a;
     cin>>a;
-    cout<<"The anti tan of "<<a<<" is "<<atan(a)<<endl;
+    cout<<"The anti tan of "<<a<<" is "<<atan(a)* 180.0 / PI<<endl;
 }
 
 void log(){
+    // log(10) = 2.3
     cout<<"Enter the number: ";
-    int a;
+    float a;
     cin>> a;
     cout<<"The log of "<<a<<" is "<<log(a)<<endl;
 }
 
 void log_10(){
+    // log_10(10) = 1
     cout<<"Enter the number: ";
-    int a;
+    float a;
     cin>> a;
     cout<<"The log base 10 of "<<a<<" is "<<log10(a)<<endl;
 }
